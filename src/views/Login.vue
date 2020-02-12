@@ -1,26 +1,24 @@
 <template>
     <div id="login">
-        <h2>Viens !<br>Connecte toi !</h2>
+        <h1>Bienvenue sur addLogo</h1>
         <form class="login-form" @submit.prevent="login">
-            <div>
-                <input type="text" placeholder="username" v-model="username" @focus="resetErrors">
+            <h2>Connexion</h2>
+            <div class="input-group">
+                <label for="username"> Identifiant</label>
+                <input type="text" id="username" name="username" placeholder="username" v-model="username">
             </div>
-            <div>
-                <input type="password" placeholder="password" v-model="password" @focus="resetErrors">
+            <div class="input-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" placeholder="password" v-model="password">
             </div>
-            <div>
-                <button type="submit">Ça va ! J'arrive !</button>
-            </div>
+            <button type="submit" class="btn-rounded">
+                <svg class="status-icon">
+                    <use xlink:href="@/assets/icons/sprite.svg#icon-arrow"></use>
+                </svg>
+            </button>
         </form>
-        <div class="register-link">
-            <router-link v-if="!isLoggedIn" to="/register">J'ai pas de compte gros !</router-link>
-        </div>
     </div>
 </template>
-
-<style lang="scss">
-
-</style>
 
 <script>
     export default {

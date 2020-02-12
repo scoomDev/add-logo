@@ -1,0 +1,16 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.6rem 0;
+
+  label {
+    padding: 0.4rem 0;
+  }
+
+  input {
+    height: 34px;
+    padding-left: 0.6rem;
+    border: 1px solid $col_grey_mid;
+  }
+}
