@@ -13,8 +13,8 @@ export default new Vuex.Store({
   },
   getters: {
     isLoggedIn: state => !!state.token,
-    getMessages: state => state.message || [],
-    hasMessages: state => state.message.length > 0
+    getMessages: state => state.messages || [],
+    hasMessages: state => state.messages
   },
   actions,
   mutations

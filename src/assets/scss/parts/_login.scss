@@ -1,21 +1,16 @@
 #login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex(column, center, center);
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - #{$dim_header});
 
   .login-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+    @include flex(column, center, center);
     width: 380px;
     height: 392px;
     margin: 0 auto;
     padding: 1rem;
-    border-radius: 20px;
+    border-radius: $border-radius;
     background-color: $col_white;
   }
 
@@ -29,8 +24,6 @@
     background-color: $col_main;
 
     svg {
-      width: 20px;
-      height: 20px;
       fill: $col_white;
     }
   }

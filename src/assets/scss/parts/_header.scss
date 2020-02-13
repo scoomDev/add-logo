@@ -1,0 +1,7 @@
+#header {
+  position: absolute;
+  @include flex(row, center, space-between);
+  width: 100%;
+  height: $dim_header;
+  padding: 0 1rem;
+}

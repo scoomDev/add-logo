@@ -1,40 +1,18 @@
 <template>
   <div id="app">
+    <HeaderComponent />
     <MessageFlashComponent />
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-  * {
-    box-sizing: border-box;
-  }
-
-  html {
-    font-size: 16px;
-  }
-
-  body {
-    font-family: Gilroy, 'Gilroy', sans-serif;
-    font-weight: 300;
-    background-color: $col_bg;
-  }
-
-  h1 {
-    font-weight: 800;
-  }
-
-  button {
-    background-color: unset;
-    border: unset;
-  }
-</style>
-
 <script>
+  import HeaderComponent from "./components/HeaderComponent"
   import MessageFlashComponent from "./components/MessageFlashComponent"
 
   export default {
     components: {
+      HeaderComponent,
       MessageFlashComponent
     },
     created: function () {

@@ -1,5 +1,5 @@
 <template>
-    <div id="login">
+    <div id="login" class="wrapper">
         <h1>Bienvenue sur addLogo</h1>
         <form class="login-form" @submit.prevent="login">
             <h2>Connexion</h2>
@@ -12,7 +12,7 @@
                 <input type="password" id="password" name="password" placeholder="password" v-model="password">
             </div>
             <button type="submit" class="btn-rounded">
-                <svg class="status-icon">
+                <svg class="icon">
                     <use xlink:href="@/assets/icons/sprite.svg#icon-arrow"></use>
                 </svg>
             </button>

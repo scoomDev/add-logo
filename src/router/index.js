@@ -5,6 +5,7 @@ import store from '../store/index'
 // VIEWS
 import Home from '../views/Home.vue'
 import Login from "../views/Login"
+import AddProject from "../views/AddProject"
 
 Vue.use(VueRouter)
 
@@ -18,6 +19,14 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+    meta: {
+      requireAuth: true
+    }
+  },
+  {
+    path: '/add-project',
+    name: 'addProject',
+    component: AddProject,
     meta: {
       requireAuth: true
     }

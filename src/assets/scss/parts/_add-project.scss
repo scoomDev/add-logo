@@ -1,0 +1,26 @@
+#addProject {
+  .workplace {
+    @include flex(row, flex-start, space-between);
+
+    picture {
+      width: 480px;
+      height: 480px;
+      border-radius: $border-radius;
+      border: 1px solid $col_grey_mid;
+    }
+  }
+
+  .create-btn {
+    position: absolute;
+    bottom: -20px;
+    right: 3rem;
+    height: 40px;
+    padding: 0 2rem;
+    color: $col_white;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: $border-radius;
+    background-color: $col_main;
+  }
+}

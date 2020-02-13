@@ -1,10 +1,16 @@
 // TOOLS
 @import "tools/typography";
 @import "tools/variables";
+@import "tools/mixins";
 
 // ELEMENTS
 @import "elements/form";
 @import "elements/button";
 
 // PARTS
+@import "reset";
+@import "global";
+@import "parts/header";
+@import "parts/home";
 @import "parts/login";
+@import "parts/add-project";
